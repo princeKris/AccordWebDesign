@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="2.css">
+	<title>veg Recipe</title>
+</head>
+<body>
+	<a href="index.html" class="button-30" role="button" style="float: left;">HOME</a>
+	<h1 align="center">VEG Food Recipe</h1>
+	<div class="spl">
+	<div class="listupd">
+		<div class="bs">
+			<div class="bx">
+				<a href="veg.html?ie=a">
+				<img src="https://www.staceyhomemaker.com/wp-content/uploads/2016/02/one-pot-sweet-potato-lentil-bean-chili_1.jpg" height="312" width="225">
+				<p><b>Sweet Potato Lentil Chili</b></p></a>
+			</div>
+		</div>
+		<div class="bs">
+			<div class="bx">
+				<a href="veg.html?ie=b">
+				<img src="https://i0.wp.com/www.internationalvegan.org/wp-content/uploads/2017/05/Linguine-with-Lentils-and-Roasted-Butternut-Squash.jpg?resize=768%2C576&ssl=1" height="312" width="225">
+				<p><b>Linguine with Lentils and Roasted Butternut Squash</b></p></a>
+			</div>
+		</div>
+		<div class="bs">
+			<div class="bx">
+				<a href="veg.html?ie=c">
+				<img src="https://i0.wp.com/www.internationalvegan.org/wp-content/uploads/IMG_0444.jpg?resize=300%2C225&ssl=1" height="312" width="225">
+				<p><b>Reinventing the Quiche</b></p></a>
+			</div>
+		</div>
+		<div class="bs">
+			<div class="bx">
+				<a href="veg.html?ie=d">
+				<img src="https://i0.wp.com/www.internationalvegan.org/wp-content/uploads/2017/05/Moroccan-Pumpkin-Soup.jpg?resize=768%2C512&ssl=1" height="312" width="225">
+				<p><b>Moroccan-Spiced Pumpkin Soup</b></p></a>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="spr">
+		<h1 id='aa' align="center" style="color: black;">VEG Food Recipe</h1>
+		<p id="rc"></p>
+	</div>
+	<script type="text/javascript">
+		getParameter = (key) => {
+		    address = window.location.search
+		    parameterList = new URLSearchParams(address)
+		    return parameterList.get(key)
+		}
+  		var ad=getParameter("ie")
+  		if (ad=="a") {
+  			document.getElementById("aa").innerHTML="Sweet Potato Lentil Chili"
+  			document.getElementById("rc").innerHTML="1.In a large pot on medium heat, add the first 13 ingredients: the oil, onions, celery, sweet potatoes, garlic, salt, pepper, chili powder, paprika, nutmeg, cumin, cinnamon, and red pepper flakes. Stir to combine.<br>2.Cover and cook for 7-9 minutes, stirring occasionally (reduce heat if onions stick to pot).<br>3.Rinse lentils.Remove lid from pot and add the lentils, water, tomatoes, beans, and bay leaf. Stir to combine.<br>4.Once boiling, reduce heat to low, cover, and simmer for at least 25-35 minutes, until sweet potatoes are softened and desired consistency is reached.<br>5.Remove bay leaf and stir in lime juice, season to taste with additional salt and pepper.Serve with lime wedges"
+  		} else if(ad=="b"){
+  			document.getElementById("aa").innerHTML="Linguine with Lentils and Roasted Butternut Squash"
+  			document.getElementById("rc").innerHTML="1.Bring a medium saucepan of salted water to boil over high heat. Add the lentils and return water to a boil, then reduce heat to low. Cover and cook lentils until tender, about 45 minutes. Drain and set aside.<br>2.As the lentils cook, preheat the oven to 400°F. Lightly oil a 9×13-inch baking pan and set aside. Cut the squash into 1/2-inch dice—approximately 4 cups—spread it in the prepared pan as a single layer. Drizzle with a small amount of oil and season with salt and pepper to taste. Roast until tender, stirring once halfway through to turn the squash, about 30 minutes. Set aside.<br>3.Heat the 2 tbsp of oil in a large skillet over medium heat. Add the onion, cover, and cook until softened, about 5 minutes. Add the garlic and cook until fragrant, about 30 seconds. Stir in the sage, tomatoes, and the cooked lentils. Stir in the stock and season with salt and pepper to taste. Simmer to blend the flavors, about 5 minutes. Stir in the roasted squash and keep warm over low heat, adding a bit more broth or water as needed for a more sauce-like texture. For a creamier sauce, use an immersion blender to blend a portion of the lentil mixture.<br>4.In a large pot of boiling salted water, cook the linguine according to package directions, stirring occasionally."
+  		}else if(ad=="c"){
+  			document.getElementById("aa").innerHTML="Reinventing the Quiche"
+  			document.getElementById("rc").innerHTML="1.Preheat the oven to 375 degrees and remove the pie crust from the freezer to start thawing.<br>2.Heat the oil in a skillet over medium heat, then add the onions. Cover and cook until softened (about 5 minutes).<br>3.Add the broccoli and cook until it is bright green, seasoning to taste with salt. Set aside.<br>4.In a food processor, combine the tofu, soy milk, mustard, cayenne and the 1/2 tsp of salt until smooth. Set aside.<br>5.Fold the tofu mixture and soy mozzarella into the skillet with the broccoli and onions.<br>6.Transfer the mixture into the crust, spreading it evenly.<br>7.Bake until firm and lightly browned on top, about 45 minutes.<br>8.Allow to cool about 10 minutes before cutting."
+  		}else if(ad=="d"){
+  			document.getElementById("aa").innerHTML="Moroccan-Spiced Pumpkin Soup"
+  			document.getElementById("rc").innerHTML="1.Heat the oil in a large pot over medium heat.<br>2.Add the onion, cover, and cook until softened, about 5 minutes.<br>3.Stir in the ginger, coriander, cinnamon, maple syrup or sugar, allspice, salt, pepper, and cayenne.<br>4.Add the pumpkin and slowly add the broth, stirring to blend until smooth.<br>5.Simmer until the onion is tender and the flavors are well combined, about 10 minutes.<br>6.Stir in the non-dairy milk and cook for another 5 minutes.<br>7.Serve hot, garnished with the pistachios, if adding.<br>8.For a cooling effect and added creaminess, add a spoonful of vegan sour cream to each bowl when serving."
+  		}
+
+	</script>
+
+</body>
+</html>
